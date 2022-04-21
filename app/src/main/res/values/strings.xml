@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Aonde é que eu tô?</string>
+    <string name="location_explanation">O app <i>\"Aonde é que eu to?\" </i> Coleta a sua localização para habilitar as funções de exibição de latitude e longitude.</string>
+    <string name="deny">RECUSAR</string>
+    <string name="ACCEPT">ACEITAR</string>
+    <string name="permission_required">A permissão é necessária para utilizar o app. Encerrando...</string>
 </resources>

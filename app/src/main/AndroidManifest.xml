@@ -14,7 +14,8 @@
         android:theme="@style/Theme.AondeÉQueEuTô">
         <activity
             android:name=".Splash"
-            android:exported="true">
+            android:exported="true"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

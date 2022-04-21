@@ -5,32 +5,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray_dark"
+    android:paddingHorizontal="20dp"
     tools:context=".PermissionActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/map"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_permission"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tv_permission"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lato_bold"
-        android:text="TENHO A PERMISSÃO?"
+        android:text="@string/location_explanation"
         android:textAlignment="center"
-        android:textColor="@color/gray_dark"
-        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_value_permission"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NÃO"
-        android:textSize="40sp"
-        android:textColor="@color/teal_200"
-        android:fontFamily="@font/lato_bold"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_permission" />
+        app:layout_constraintTop_toBottomOf="@id/tv_permission"
+        android:layout_marginTop="14dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_deny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deny"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="20sp"
+            android:layout_marginEnd="50dp"
+            android:textColor="@color/blue"
+            android:padding="20dp"
+            android:textAllCaps="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ACCEPT"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:textColor="@color/blue"
+            android:padding="20dp"
+            />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
